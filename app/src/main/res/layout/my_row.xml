@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/obj_id_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_Black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nome_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Title 1"
+                android:textColor="@color/color_Black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/dAdquirido_view"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toEndOf="@+id/obj_id_txt"
+                app:layout_constraintTop_toTopOf="@+id/obj_id_txt" />
+
+            <TextView
+                android:id="@+id/localizacao_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Localização 1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/uVisto_view"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/nome_view"
+                app:layout_constraintTop_toBottomOf="@+id/nome_view"
+                app:layout_constraintVertical_bias="0.368" />
+
+            <TextView
+                android:id="@+id/dAdquirido_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/1/2020"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/uVisto_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19/5/2019"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dAdquirido_view" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/color_Toolbar"/>
+
+</LinearLayout>

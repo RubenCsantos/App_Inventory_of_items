@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".goToMenu">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/customtoolbar2"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="677dp"
+        android:layout_below="@+id/include"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#b84646"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_add" />
+
+    <ImageView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="250dp"
+        app:srcCompat="@drawable/ic_empty"
+        android:alpha="0.4"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/sem_dados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="219dp"
+        android:text="Sem dados."
+        android:textSize="20sp"
+        android:alpha="0.6"
+        android:visibility="gone"/>
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="274dp"
+        android:layout_height="43dp"
+        android:layout_alignBottom="@+id/include"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="7dp"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"/>
+
+
+</RelativeLayout>

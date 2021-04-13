@@ -1,0 +1,2 @@
+INSERT INTO my_inventory VALUES (null,"Caderno","3/2/2017","Cozinha","7/12/2018")
+INSERT INTO my_inventory VALUES (null,"teste","3/1/2011","Cozinha","27/9/2013")
